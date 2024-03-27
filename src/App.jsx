@@ -1,11 +1,13 @@
 import Footer from "./componentes/Footer.jsx"
-import Header from "./componentes/Header.jsx"
+import ItemListContainer from "./componentes/ItemListContainer.jsx"
 import Main from "./componentes/Main.jsx"
+import NavBar from "./componentes/NavBar.jsx"
 
 function App() {
   return (
     <>
-      <Header/>
+      <NavBar />
+      <ItemListContainer />
       <Main />
       <Footer />
     </>
