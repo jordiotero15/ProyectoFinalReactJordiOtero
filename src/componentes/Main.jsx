@@ -1,6 +1,5 @@
 import CardsProductos from "./CardsProductos";
 import ItemListContainer from "./ItemListContainer";
-import Page from "./Page";
 
 function Main() {
   return (
