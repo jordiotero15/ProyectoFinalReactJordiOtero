@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Whey Protein 2kg",
+        "category": "proteinas",
+        "precio": 4990,
+        "img": "/img/prot1.png",
+        "alt": "Whey Protein 2kg - En Polvo"
+    },
+    {
+        "id": 2,
+        "name": "Whey Pro 5lb",
+        "category": "proteinas",
+        "precio": 4890,
+        "img": "/img/prot4.jpg",
+        "alt": "Whey Pro 5lb - En Polvo"
+    },
+    {
+        "id": 3,
+        "name": "Vegan Protein 1,5 kg",
+        "category": "proteinas",
+        "precio": 2690,
+        "img": "/img/prot2.jpg",
+        "alt": "Vegan Protein 1,5 kg - En Polvo"
+    },
+    {
+        "id": 4,
+        "name": "BlueLab Whey Protein 2kg",
+        "category": "proteinas",
+        "precio": 7150,
+        "img": "/img/prot3.jpg",
+        "alt": "BlueLab Whey Protein 2kg - En Polvo"
+    },
+    {
+        "id": 5,
+        "name": "BCAA 1400",
+        "category": "aminoacidos",
+        "precio": 1575,
+        "img": "/img/amino1.jpeg",
+        "alt": "BCAA 1400"
+    },
+    {
+        "id": 6,
+        "name": "BCAA 2:1:1",
+        "category": "aminoacidos",
+        "precio": 2090,
+        "img": "/img/amino2.jpg",
+        "alt": "BCAA 2:1:1"
+    },
+    {
+        "id": 7,
+        "name": "L-Cartine 250 mg",
+        "category": "vitaminas",
+        "precio": 1560,
+        "img": "/img/vit1.jpg",
+        "alt": "L-Cartine 250 mg"
+    },
+    {
+        "id": 8,
+        "name": "Vitamina C + Zinc",
+        "category": "vitaminas",
+        "precio": 1590,
+        "img": "/img/vit3.jpg",
+        "alt": "Vitamina C + Zinc"
+    },
+    {
+        "id": 9,
+        "name": "Vitamina E",
+        "category": "vitaminas",
+        "precio": 1788,
+        "img": "/img/vit2.jpg",
+        "alt": "Vitamina E"
+    }
+]
