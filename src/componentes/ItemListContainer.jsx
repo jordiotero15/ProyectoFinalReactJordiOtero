@@ -3,34 +3,34 @@ import CardProducto from './CardProducto';
 import { useParams } from 'react-router-dom';
 
 function ItemListContainer() {
-
+    const { category } = useParams();
     const [productos, setProductos] = useState([]);
-
-    const params = useParams();
-    console.log(params.category);
-
+    
     useEffect(() => {
         let pedido;
-
-        if (params.category) {
-            pedido = fetch(`/data.json?category=${params.category}`);
-            console.log(pedido);
+    
+        if (category) {
+            pedido = fetch(`/data.json`)
+                .then((res) => res.json())
+                .then((data) => {
+                    const productosFiltrados = data.filter((producto) => producto.category === category);
+                    setProductos(productosFiltrados);
+                })
+                .catch((err) => {
+                    console.log(err);
+                });
         } else {
-            pedido = fetch("/data.json");
+            pedido = fetch("/data.json")
+                .then((res) => res.json())
+                .then((data) => {
+                    setProductos(data);
+                })
+                .catch((err) => {
+                    console.log(err);
+                });
         }
-
-        pedido.then((res) => {
-            return res.json()
-        })
-            .then((res) => {
-                setProductos(res)
-                console.log(res);
-            })
-            .catch((err) => {
-                console.log(err);
-            })
-    }, [params.category])
-
+       
+    }, [category]);
 
     return (
         <>
