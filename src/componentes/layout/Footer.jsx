@@ -9,7 +9,7 @@ const links = [
   },
   {
     title: "Nosotros",
-    items: ["Contacto", "Ubicación"],
+    items: ["Contacto", "Ayuda"],
   }
 ];
  

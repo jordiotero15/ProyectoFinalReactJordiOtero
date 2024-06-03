@@ -5,23 +5,28 @@
         "category": "proteinas",
         "precio": 4990,
         "img": "/img/prot1.png",
-        "alt": "Whey Protein 2kg - En Polvo"
+        "alt": "Whey Protein 2kg - En Polvo",
+        "stock": 30,
+        "description": "Whey Protein es un suplemento nutricional popular entre los atletas y personas activas que buscan aumentar su ingesta de proteínas. Este producto utiliza suero de leche como fuente principal de proteínas, conocido por su alta calidad y rápida absorción. Está diseñado para apoyar el crecimiento muscular, la recuperación post-entrenamiento y la mejora general de la nutrición."
     },
     {
         "id": 2,
         "name": "Whey Pro 5lb",
         "category": "proteinas",
         "precio": 4890,
-        "img": "/img/prot4.jpg",
-        "alt": "Whey Pro 5lb - En Polvo"
+        "img": "/img/prot4.png",
+        "alt": "Whey Pro 5lb - En Polvo",
+        "stock": 35,
+        "description": "Whey Pro es un suplemento proteico diseñado para apoyar el desarrollo muscular, la recuperación después del ejercicio y mejorar la nutrición diaria. Este producto utiliza proteínas de suero de leche de alta calidad, conocidas por su excelente perfil de aminoácidos y rápida absorción, lo que lo hace ideal para atletas y personas activas."
     },
     {
         "id": 3,
         "name": "Vegan Protein 1,5 kg",
         "category": "proteinas",
         "precio": 2690,
-        "img": "/img/prot2.jpg",
+        "img": "/img/prot2.png",
         "alt": "Vegan Protein 1,5 kg - En Polvo",
+        "stock": 30,
         "description": "La Vegan Protein es un suplemento alimenticio diseñado para personas que siguen una dieta vegana o vegetariana, así como para aquellos que desean reducir su consumo de productos animales. Está compuesto principalmente por proteínas derivadas de fuentes vegetales, como guisante, arroz, cáñamo, soya y otras legumbres y granos."
     },
     {
@@ -29,24 +34,30 @@
         "name": "BlueLab Whey Protein 2kg",
         "category": "proteinas",
         "precio": 7150,
-        "img": "/img/prot3.jpg",
-        "alt": "BlueLab Whey Protein 2kg - En Polvo"
+        "img": "/img/prot3.png",
+        "alt": "BlueLab Whey Protein 2kg - En Polvo",
+        "stock": 50,
+        "description": "BlueLab Whey Protein es un suplemento nutricional diseñado para apoyar el desarrollo muscular y la recuperación post-entrenamiento. Este producto combina proteínas de suero de alta calidad provenientes de tres fuentes: concentrado de suero, aislado de suero y péptidos de suero hidrolizado. Esta mezcla proporciona un perfil de aminoácidos completo y una alta biodisponibilidad, lo que facilita la absorción y utilización de las proteínas por el cuerpo."
     },
     {
         "id": 5,
         "name": "BCAA 1400",
         "category": "aminoacidos",
         "precio": 1575,
-        "img": "/img/amino1.jpeg",
-        "alt": "BCAA 1400"
+        "img": "/img/amino1.png",
+        "alt": "BCAA 1400",
+        "stock": 10,
+        "description": "BCAA 1400 es un suplemento dietético que proporciona aminoácidos de cadena ramificada (BCAA, por sus siglas en inglés), esenciales para el crecimiento muscular, la recuperación y la reducción de la fatiga durante el ejercicio. Los BCAA incluyen tres aminoácidos: leucina, isoleucina y valina, que son cruciales para la síntesis de proteínas musculares y el mantenimiento de la masa muscular."
     },
     {
         "id": 6,
         "name": "BCAA 2:1:1",
         "category": "aminoacidos",
         "precio": 2090,
-        "img": "/img/amino2.jpg",
-        "alt": "BCAA 2:1:1"
+        "img": "/img/amino2.png",
+        "alt": "BCAA 2:1:1",
+        "stock": 37,
+        "description": "BCAA 2:1:1 es un suplemento dietético que proporciona aminoácidos de cadena ramificada (BCAA) en una proporción específica de 2 partes de leucina, 1 parte de isoleucina y 1 parte de valina. Esta fórmula está diseñada para optimizar la síntesis de proteínas musculares, mejorar la recuperación y reducir la fatiga durante y después del ejercicio."
     },
     {
         "id": 7,
@@ -54,7 +65,9 @@
         "category": "vitaminas",
         "precio": 1560,
         "img": "/img/vit1.jpg",
-        "alt": "L-Cartine 250 mg"
+        "alt": "L-Cartine 250 mg",
+        "stock": 55,
+        "description": "L-Carnitine es un suplemento nutricional diseñado para apoyar el metabolismo energético y la quema de grasa. La L-carnitina es un aminoácido que juega un papel crucial en el transporte de ácidos grasos a las mitocondrias, donde se utilizan como fuente de energía. Este suplemento es popular entre atletas y personas que buscan mejorar su rendimiento físico y promover la pérdida de peso."
     },
     {
         "id": 8,
@@ -62,7 +75,9 @@
         "category": "vitaminas",
         "precio": 1590,
         "img": "/img/vit3.jpg",
-        "alt": "Vitamina C + Zinc"
+        "alt": "Vitamina C + Zinc",
+        "stock": 90,
+        "description": "Vitamina C + Zinc es un suplemento dietético formulado para apoyar el sistema inmunológico y ofrecer beneficios antioxidantes. La combinación de vitamina C y zinc es conocida por sus propiedades sinérgicas, ayudando a proteger el cuerpo contra infecciones y promoviendo la salud general."
     },
     {
         "id": 9,
@@ -70,6 +85,8 @@
         "category": "vitaminas",
         "precio": 1788,
         "img": "/img/vit2.jpg",
-        "alt": "Vitamina E"
+        "alt": "Vitamina E",
+        "stock": 54,
+        "description": "La Vitamina E es un nutriente esencial conocido por sus propiedades antioxidantes, que ayudan a proteger las células del daño causado por los radicales libres. Es liposoluble, lo que significa que se almacena en las células grasas del cuerpo y se encuentra en varias formas, siendo el alfa-tocoferol la más común y biológicamente activa en humanos. La Vitamina E desempeña un papel crucial en la salud de la piel, la función inmunológica y otros procesos biológicos."
     }
 ]

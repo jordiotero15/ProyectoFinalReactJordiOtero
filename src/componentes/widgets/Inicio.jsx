@@ -2,12 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FcGoogle } from "react-icons/fc";
 
-export default function Registro({ onHideCarousel}) {
+export default function Inicio({ onHideCarousel}) {
 
 
     return (
         <>
-            {/* Inicio de sesion */}
             <div className='text-center'>
                 <h1 className='text-white font-bold uppercase italic text-2xl mb-10 sm:text-3xl md:text-4xl xl:text-5xl'>Suplementos Uruguay</h1>
                 <div className='flex flex-col items-center  text-white '>

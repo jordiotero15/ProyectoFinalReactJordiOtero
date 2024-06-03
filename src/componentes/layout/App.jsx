@@ -1,34 +1,9 @@
-// import { BrowserRouter } from "react-router-dom"
-// import Footer from "./componentes/Footer.jsx"
-// import Main from "./componentes/Main.jsx"
-// import NavBar from "./componentes/NavBar.jsx"
-// import Ayuda from "./componentes/pages/Ayuda.jsx"
-// import Carousel from "./componentes/pages/Carousel.jsx"
-
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <Carousel />
-//       <>
-//         <NavBar />
-//         <Main />
-//         <Footer />
-//         <Ayuda />
-//       </>
-
-//     </BrowserRouter>
-//   )
-// }
-
-// export default App
-
-
 import React, { useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import Footer from './componentes/Footer.jsx';
-import Main from './componentes/Main.jsx';
-import NavBar from './componentes/NavBar.jsx';
-import Carousel from './componentes/pages/Carousel.jsx';
+import Footer from './Footer.jsx';
+import Main from './Main.jsx';
+import NavBar from './NavBar.jsx';
+import Carousel from '../widgets/Carousel.jsx';
 
 
 const slides = [
@@ -39,10 +14,7 @@ const slides = [
 
 
 function App() {
-  // Estado para controlar la visibilidad del Carousel
   const [showCarousel, setShowCarousel] = useState(true);
-
-  // Función para ocultar el Carousel
   const handleHideCarousel = () => {
     setShowCarousel(false);
   };
@@ -59,7 +31,6 @@ function App() {
             </Carousel>
           </div>
         </div>
-
 
       ) : (
         <>
