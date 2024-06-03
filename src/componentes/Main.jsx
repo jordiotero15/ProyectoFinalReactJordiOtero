@@ -2,13 +2,14 @@ import { Route, Routes } from "react-router-dom";
 import Contacto from "./pages/Contacto";
 import ItemDetailContainer from "./ItemDetailContainer";
 import ItemListContainer from "./ItemListContainer";
+import Ayuda from "./pages/Ayuda";
 
 
 
 function Main() {
 
   return (
-    <main className="p-4 text-black grow mi-main">
+    <main className="text-black grow mi-main">
       <Routes>
         <Route path='/' element={<ItemListContainer />} />
 
@@ -19,6 +20,8 @@ function Main() {
         <Route path="/producto/:id" element={<ItemDetailContainer />} />
 
         <Route path='/contacto' element={<Contacto />} />
+
+        <Route path='/ayuda' element={<Ayuda />} />
       </Routes>
     </main>
   )

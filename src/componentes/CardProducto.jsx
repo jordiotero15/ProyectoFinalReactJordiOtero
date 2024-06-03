@@ -6,7 +6,7 @@ function CardProducto({ producto }) {
     return (
         <div className=" bg-white  border shadow-xl py-10 px-3 text-center font-semibold w-80 group ">
             <div className="overflow-hidden aspect-video">
-                <img className=" w-32 h-32 shadow-xl mt-2 mx-auto rounded-md transition-all grouphover:grayscale-0 group-hover:scale-125  duration-700 " src={img} alt={alt} />
+                <img className=" w-32 h-32 drop-shadow-xl  mt-2 mx-auto rounded-md transition-all grouphover:grayscale-0 group-hover:scale-125  duration-700 " src={img} alt={alt} />
             </div>
             <h4 className='text-xl text-gray-800 mb-2'>{name}</h4>
             <h5 className='text-lg text-red-900 '>${precio}</h5>

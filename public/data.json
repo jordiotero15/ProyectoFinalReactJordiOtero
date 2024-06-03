@@ -21,7 +21,8 @@
         "category": "proteinas",
         "precio": 2690,
         "img": "/img/prot2.jpg",
-        "alt": "Vegan Protein 1,5 kg - En Polvo"
+        "alt": "Vegan Protein 1,5 kg - En Polvo",
+        "description": "La Vegan Protein es un suplemento alimenticio diseñado para personas que siguen una dieta vegana o vegetariana, así como para aquellos que desean reducir su consumo de productos animales. Está compuesto principalmente por proteínas derivadas de fuentes vegetales, como guisante, arroz, cáñamo, soya y otras legumbres y granos."
     },
     {
         "id": 4,
