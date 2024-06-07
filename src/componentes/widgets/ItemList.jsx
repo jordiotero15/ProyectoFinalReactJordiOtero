@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function ItemList({ producto }) {
     const { id, name, category, precio, img, alt } = producto;
     return (
-        <div className=" bg-white  border shadow-xl py-10 px-3 text-center font-semibold w-80 group ">
+        <div className=" bg-white  border shadow-xl py-10 px-3 text-center font-semibold w-80 group rounded-md ">
             <div className="overflow-hidden aspect-video">
                 <img className=" w-32 h-32 drop-shadow-xl  mt-2 mx-auto rounded-md transition-all grouphover:grayscale-0 group-hover:scale-125  duration-700 " src={img} alt={alt} />
             </div>

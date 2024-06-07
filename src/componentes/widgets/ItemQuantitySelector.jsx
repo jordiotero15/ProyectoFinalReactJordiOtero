@@ -1,25 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 
-function ItemQuantitySelector() {
-
-    const [numero, setNumero] = useState(0)
-
-    const incrementar = () => {
-        setNumero(numero + 1)
-    }
-
-    const decrementar = () => {
-        setNumero(numero - 1)
-    }
+function ItemQuantitySelector({ cantidad, aumentarCantidad, restarCantidad }) {
 
     return (
 
         <>
             <div className='flex gap-5 border border-gray-300 px-2 rounded'>
-                <button onClick={decrementar} className='text-xl'>-</button>
-                <p className='text-xl'>{numero}</p>
-                <button onClick={incrementar} className='text-2xl text-blue-600'>+</button>
+                <button onClick={restarCantidad} className='text-xl'>-</button>
+                <p className='text-xl'>{cantidad}</p>
+                <button onClick={aumentarCantidad} className='text-2xl text-blue-600'>+</button>
             </div>
         </>
 

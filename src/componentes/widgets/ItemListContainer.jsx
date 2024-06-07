@@ -19,7 +19,7 @@ function ItemListContainer() {
 
     return (
         <>
-            <section className='grid grid-cols-1 gap-4 my-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-col-4'>
+            <section className='grid grid-cols-1 gap-4 my-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-col-4 mt-20'>
                 {filtrarProductos.map((producto) => (
                     <ItemList key={producto.id} producto={producto} />
                 ))}

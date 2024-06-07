@@ -4,6 +4,7 @@ import ItemDetailContainer from "../widgets/ItemDetailContainer";
 import ItemListContainer from "../widgets/ItemListContainer";
 import Ayuda from "../pages/Ayuda";
 import CartWidget from "../pages/CartWidget";
+import Checkout from "../pages/Checkout";
 
 
 
@@ -19,6 +20,7 @@ function Main() {
         <Route path='/contacto' element={<Contacto />} />
         <Route path='/ayuda' element={<Ayuda />} />
         <Route path='/cart' element={<CartWidget />} />
+        <Route path='/checkout' element={<Checkout />} />
       </Routes>
     </main>
   )
