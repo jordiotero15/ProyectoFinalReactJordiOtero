@@ -1,49 +1,31 @@
-import React, { useEffect, useState } from 'react'
-import CardProducto from './CardProducto';
+import React, { useContext, useEffect, useState } from 'react';
+import ItemList from './ItemList';
+import { ProductsContext } from './ProductsContext';
 import { useParams } from 'react-router-dom';
 
 function ItemListContainer() {
     const { category } = useParams();
-    const [productos, setProductos] = useState([]);
-    
+    const { productos } = useContext(ProductsContext);
+    const [filtrarProductos, setFiltrarProductos] = useState([]);
+
     useEffect(() => {
-        let pedido;
-    
         if (category) {
-            pedido = fetch(`/data.json`)
-                .then((res) => res.json())
-                .then((data) => {
-                    const productosFiltrados = data.filter((producto) => producto.category === category);
-                    setProductos(productosFiltrados);
-                })
-                .catch((err) => {
-                    console.log(err);
-                });
+            const productosFiltrados = productos.filter(producto => producto.category === category);
+            setFiltrarProductos(productosFiltrados);
         } else {
-            pedido = fetch("/data.json")
-                .then((res) => res.json())
-                .then((data) => {
-                    setProductos(data);
-                })
-                .catch((err) => {
-                    console.log(err);
-                });
+            setFiltrarProductos(productos);
         }
-       
-    }, [category]);
+    }, [category, productos]);
 
     return (
         <>
             <section className='grid grid-cols-1 gap-4 my-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-col-4'>
-                {productos.map((producto) => {
-                    return (
-                        <CardProducto key={producto.id} producto={producto}/>
-                    )
-                })
-                }
+                {filtrarProductos.map((producto) => (
+                    <ItemList key={producto.id} producto={producto} />
+                ))}
             </section>
         </>
-    )
+    );
 }
 
-export default ItemListContainer
+export default ItemListContainer;

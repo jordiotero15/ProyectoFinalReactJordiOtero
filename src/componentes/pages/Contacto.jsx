@@ -29,9 +29,9 @@ function Contacto() {
             <div className='w-2/3 mb-1'>
               <label htmlFor="name"><input className='w-full p-1 rounded border border-black ' type="text" placeholder=' Nombre *' /></label>
             </div>
-            <div className='flex w-2/3 justify-between mb-1'>
-              <label htmlFor="email"><input className='w-full p-1 rounded border border-black' type="text" placeholder=' Email *' /></label>
-              <label htmlFor="phone"><input className='w-full p-1 rounded border border-black' type="tel" placeholder=' Teléfono *' /></label>
+            <div className='flex justify-between gap-2 w-2/3 mb-1'>
+              <label className='w-full' htmlFor="email"><input className='w-full p-1 rounded border border-black' type="text" placeholder=' Email *' /></label>
+              <label className='w-full' htmlFor="phone"><input className='w-full p-1 rounded border border-black' type="tel" placeholder=' Teléfono *' /></label>
             </div>
             <div className='w-2/3 mb-1'>
               <label htmlFor="asunto"><input className='w-full p-1 rounded border border-black' type="text" placeholder='Asunto *' /></label>

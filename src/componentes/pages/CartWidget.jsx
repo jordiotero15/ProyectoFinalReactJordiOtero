@@ -1,10 +1,8 @@
 import ItemQuantitySelector from "../widgets/ItemQuantitySelector"
+import { CartContext } from '../widgets/CartContext';
 
 function CartWidget() {
-
-    const onConfirm = () => {
-
-    }
+    const { cart, removeFromCart } = useContext(CartContext);
 
     return (
         <>

@@ -4,6 +4,8 @@ import Footer from './Footer.jsx';
 import Main from './Main.jsx';
 import NavBar from './NavBar.jsx';
 import Carousel from '../widgets/Carousel.jsx';
+import { CartProvider } from '../widgets/CartContext.jsx';
+import ProductsProvider from '../widgets/ProductsContext.jsx';
 
 
 const slides = [
@@ -21,24 +23,28 @@ function App() {
 
   return (
     <BrowserRouter>
-      {showCarousel ? (
-        <div className='flex justify-center items-center h-screen bg-black overflow-hidden'>
-          <div className='mx-20'>
-            <Carousel autoSlide={true} onHideCarousel={handleHideCarousel} >
-              {slides.map((i) => (
-                <img src={i} alt="Carousel" />
-              ))}
-            </Carousel>
-          </div>
-        </div>
+      <ProductsProvider>
+        <CartProvider>
+          {showCarousel ? (
+            <div className='flex justify-center items-center h-screen bg-black overflow-hidden'>
+              <div className='mx-20'>
+                <Carousel autoSlide={true} onHideCarousel={handleHideCarousel} >
+                  {slides.map((i) => (
+                    <img src={i} alt="Carousel" />
+                  ))}
+                </Carousel>
+              </div>
+            </div>
 
-      ) : (
-        <>
-          <NavBar />
-          <Main />
-          <Footer />
-        </>
-      )}
+          ) : (
+            <>
+              <NavBar />
+              <Main />
+              <Footer />
+            </>
+          )}
+        </CartProvider>
+      </ProductsProvider>
     </BrowserRouter>
   );
 }

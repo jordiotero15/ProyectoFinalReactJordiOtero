@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { IoPersonCircleOutline } from 'react-icons/io5';
 import { ShoppingCartIcon } from "lucide-react"
 
 
@@ -48,7 +47,7 @@ function classNames(...classes) {
 
 export default function NavBar() {
     return (
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-gray-800 fixed top-0 left-0 right-0 z-50 ">
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">

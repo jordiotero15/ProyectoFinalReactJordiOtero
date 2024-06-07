@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-function CardProducto({ producto }) {
+function ItemList({ producto }) {
     const { id, name, category, precio, img, alt } = producto;
     return (
         <div className=" bg-white  border shadow-xl py-10 px-3 text-center font-semibold w-80 group ">
@@ -17,4 +17,4 @@ function CardProducto({ producto }) {
     )
 }
 
-export default CardProducto
+export default ItemList
