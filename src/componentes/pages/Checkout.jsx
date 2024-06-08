@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import CheckoutLoadingToastify from '../widgets/CheckoutLoadingToastify';
 
-function Checkout() {
+export default function Checkout() {
   return (
-    <div>Checkout</div>
-  )
+    <div className="flex justify-center items-center h-screen">
+      <CheckoutLoadingToastify />
+    </div>
+  );
 }
 
-export default Checkout
+

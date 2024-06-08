@@ -6,7 +6,8 @@ import NavBar from './NavBar.jsx';
 import Carousel from '../widgets/Carousel.jsx';
 import { CartProvider } from '../widgets/CartContext.jsx';
 import ProductsProvider from '../widgets/ProductsContext.jsx';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const slides = [
   "./img/img1.jpeg",
@@ -35,14 +36,15 @@ function App() {
                 </Carousel>
               </div>
             </div>
-
           ) : (
             <>
+
               <NavBar />
               <Main />
               <Footer />
             </>
           )}
+          <ToastContainer />
         </CartProvider>
       </ProductsProvider>
     </BrowserRouter>
