@@ -49,12 +49,12 @@ function classNames(...classes) {
 
 export default function NavBar() {
     return (
-        <Disclosure as="nav" className="bg-gray-800 fixed top-0 left-0 right-0 z-50 ">
+        <Disclosure as="nav" className="bg-gray-800 fixed top-0 left-0 right-0 z-50">
             {({ open }) => (
                 <>
-                    <div className='flex justify-end bg-black p-1'>
-                        <p className='text-white font-semibold'>Siguenos en nuestras redes:</p>
-                        <div className='flex items-center'>
+                    <div className='flex justify-end gap-2 bg-slate-950 bg- px-3 py-1'>
+                        <p className='text-white font-semibold'>Síguenos en nuestras redes:</p>
+                        <div className='flex items-center gap-1'>
                             <FaInstagram className='text-white' />
                             <FaSquareXTwitter className='text-white' />
                             <FaFacebookSquare className='text-white' />
