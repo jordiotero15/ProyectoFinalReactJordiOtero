@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import  {  useEffect } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import CheckoutForm from './CheckoutForm';
 
-export default function CheckoutLoadingToastify() {
-    const [loading, setLoading] = useState(true);
-
+export default function CheckoutLoadingToastify({ onLoadComplete }) {
     useEffect(() => {
         toast.dismiss();
 
@@ -17,32 +14,24 @@ export default function CheckoutLoadingToastify() {
             draggable: true
         });
 
-        // Simulate data loading
+        
         const timer = setTimeout(() => {
-            setLoading(false);
             toast.update(loadingToastId, {
                 type: "success",
                 isLoading: false,
                 autoClose: 1000
             });
+            onLoadComplete();
         }, 3000);
 
-        // Clear the timeout if the component unmounts
+      
         return () => {
             clearTimeout(timer);
             toast.dismiss(loadingToastId);
         };
-    }, []);
+    }, [onLoadComplete]);
 
-    if (loading) {
-        return null;
-    }
-
-    return (
-        <>
-            <CheckoutForm />
-        </>
-    );
+    return null; 
 }
 
 

@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ShoppingCartIcon } from "lucide-react"
+import { FaInstagram, FaSquareXTwitter } from "react-icons/fa6";
+import { FaFacebookSquare } from "react-icons/fa";
 
 
 const navigation = [
@@ -50,6 +52,14 @@ export default function NavBar() {
         <Disclosure as="nav" className="bg-gray-800 fixed top-0 left-0 right-0 z-50 ">
             {({ open }) => (
                 <>
+                    <div className='flex justify-end bg-black p-1'>
+                        <p className='text-white font-semibold'>Siguenos en nuestras redes:</p>
+                        <div className='flex items-center'>
+                            <FaInstagram className='text-white' />
+                            <FaSquareXTwitter className='text-white' />
+                            <FaFacebookSquare className='text-white' />
+                        </div>
+                    </div>
                     <div className="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
                         <div className="relative flex h-16 items-center justify-between">
                             <div className="absolute inset-y-0 left-0 flex items-center md:hidden">

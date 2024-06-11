@@ -1,14 +1,18 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import ItemQuantitySelector from '../widgets/ItemQuantitySelector';
 import { CartContext } from '../widgets/CartContext';
 import { LiaShoppingBasketSolid } from "react-icons/lia";
 
 function CartWidget() {
-    const { carrito, aumentarCantidad, restarCantidad, comprarProducto, eliminarProducto } = useContext(CartContext);
+    const { carrito, aumentarCantidad, restarCantidad, eliminarProducto } = useContext(CartContext);
+    const navigate = useNavigate();
 
     const total = carrito.reduce((acc, producto) => acc + producto.precio * producto.cantidad, 0);
 
+    const handleCheckout = () => {
+        navigate('/checkout', { state: { carrito } });
+    };
     return (
         <>
             <div className="flex justify-center gap-10 w-full h-full px-20 py-16 mt-10">
@@ -74,13 +78,12 @@ function CartWidget() {
                             </div>
                         )}
                         <div className="w-full">
-                            <Link to="/checkout" className='w-full h-full'>
-                                <button
-                                    className={`bg-blue-500 text-white text-lg font-bold transition-all duration-500 h-10 rounded text-center w-full ${carrito.length === 0 ? 'hidden' : 'hover:bg-blue-600'}`}
-                                >
-                                    Comprar ahora
-                                </button>
-                            </Link>
+                            <button
+                                onClick={handleCheckout}
+                                className={`bg-blue-500 text-white text-lg font-bold transition-all duration-500 h-10 rounded text-center w-full ${carrito.length === 0 ? 'hidden' : 'hover:bg-blue-600'}`}
+                            >
+                                Comprar ahora
+                            </button>
                         </div>
                     </div>
                 </div>
