@@ -31,7 +31,7 @@ function ItemDetail({ producto }) {
 
     return (
         <>
-            <div className='grid grid-cols-3 p-10 bg-gray-100 border border-gray-300 rounded w-4/5'>
+            <div className='grid grid-cols-3 p-10 mt-10 bg-gray-100 border border-gray-300 rounded w-4/5'>
                 <div className='flex justify-center'>
                     <img src={producto.img} alt={producto.alt} className='w-2/3 h-fit' />
                 </div>

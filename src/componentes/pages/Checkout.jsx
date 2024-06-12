@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import CheckoutForm from '../widgets/CheckoutForm';
 import CheckoutLoadingToastify from '../widgets/CheckoutLoadingToastify';
-import Brief from './Brief';
+import Brief from '../widgets/Brief';
 import { CartContext } from '../widgets/CartContext';
 
 function Checkout() {
@@ -33,7 +33,7 @@ function Checkout() {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center">
       {loading ? (
         <CheckoutLoadingToastify onLoadComplete={handleLoadComplete} />
       ) : (

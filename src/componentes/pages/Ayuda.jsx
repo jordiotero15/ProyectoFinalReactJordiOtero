@@ -4,7 +4,7 @@ import { SiMercadopago } from "react-icons/si"
 
 function Ayuda() {
     return (
-        <main>
+        <main className="mt-28">
             <h1 className="text-5xl font-mono font-bold text-center">Centro de ayuda</h1>
             {/* SECTION - COMO COMPRAR */}
             <section className="flex mt-5 border-t-2 border-t-black md:px-10">

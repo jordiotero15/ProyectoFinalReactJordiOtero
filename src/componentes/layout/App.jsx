@@ -62,6 +62,7 @@ import Carousel from '../widgets/Carousel.jsx';
 import { CartProvider } from '../widgets/CartContext.jsx';
 import ProductsProvider from '../widgets/ProductsContext.jsx';
 import { ToastContainer } from 'react-toastify';
+import { NavigationProvider } from '../widgets/NavigationContext.jsx';
 
 
 const slides = [
@@ -80,24 +81,26 @@ function App() {
     <BrowserRouter>
       <ProductsProvider>
         <CartProvider>
-          {showCarousel ? (
-            <div className='flex justify-center items-center h-screen bg-black overflow-hidden'>
-              <div className='mx-20'>
-                <Carousel autoSlide={true} onHideCarousel={handleHideCarousel} >
-                  {slides.map((i, index) => (
-                    <img key={index} src={i} alt="Carousel" />
-                  ))}
-                </Carousel>
+          <NavigationProvider>
+            {showCarousel ? (
+              <div className='flex justify-center items-center h-screen bg-black overflow-hidden'>
+                <div className='mx-20'>
+                  <Carousel autoSlide={true} onHideCarousel={handleHideCarousel} >
+                    {slides.map((i, index) => (
+                      <img key={index} src={i} alt="Carousel" />
+                    ))}
+                  </Carousel>
+                </div>
               </div>
-            </div>
-          ) : (
-            <>
-              <NavBar />
-              <Main />
-              <Footer />
-            </>
-          )}
-          <ToastContainer />
+            ) : (
+              <>
+                <NavBar />
+                <Main />
+                <Footer />
+              </>
+            )}
+            <ToastContainer />
+          </NavigationProvider>
         </CartProvider>
       </ProductsProvider>
     </BrowserRouter>

@@ -27,8 +27,8 @@ function CheckoutForm({ formData, setFormData, onFormSubmit }) {
 
     return (
         <>
-            <h1 className='font-bold mb-2'>Tarjeta de débito/credito</h1>
-            <form onSubmit={handleSubmit} className="w-full max-w-sm">
+            <h1 className='font-bold mt-32 mb-2'>Tarjeta de débito/credito</h1>
+            <form onSubmit={handleSubmit} className="w-full max-w-sm mb-16">
                 <div>
                     <div className="mb-4 relative">
                         <label htmlFor="numeroTarjeta" className="block text-gray-700"></label>

@@ -3,13 +3,13 @@ import { TfiMapAlt } from "react-icons/tfi";
 
 function Contacto() {
   return (
-    <main>
+    <main className='mt-28'>
       <h1 className="text-5xl font-mono font-bold text-center">Contacto</h1>
       {/* SECTION - Sobre Nostrosos */}
       <section className="relative mt-5 border-t-2 border-t-black md:px-10">
         <div className="relative w-full md:w-full p-8 bg-gradient-to-r from-gray-600 bg-cover bg-center " style={{ backgroundImage: "url('./img/quienesSomos.jpg')" }}>
-          <h2 className="text-3xl uppercase font-semibold text-center bg-white bg-opacity-85 rounded-t">Sobre Nosotros</h2>
-          <p className="text-justify pt-5 px-3 font-medium bg-white bg-opacity-85 p-4 rounded-b">
+          <h2 className="text-3xl pt-4 px-2 uppercase font-semibold text-center bg-white bg-opacity-85 rounded-t">Sobre Nosotros</h2>
+          <p className="text-justify pt-5 px-4 font-medium bg-white bg-opacity-85 p-4 rounded-b">
             Somos una empresa familiar que nació del sueño compartido de dos hermanos, quienes desde pequeños anhelaban tener su propio negocio. Al alcanzar la adultez, estos hermanos lograron materializar ese sueño, fundando una tienda de suplementos que se distingue por la calidad superior de sus productos. Nuestra propuesta fundamental radica en ofrecer suplementos importados del exterior, seleccionados cuidadosamente para garantizar los más altos estándares de calidad.
             <br /><br />
             Valoramos profundamente a nuestros colaboradores, quienes son el activo principal de nuestra empresa y desempeñan un papel crucial en la selección, importación y comercialización de nuestros productos. Nos esforzamos por crear un ambiente acogedor para nuestra comunidad, donde cada cliente sea bienvenido y pueda encontrar el suplemento ideal para sus necesidades. En nuestra tienda, no solo encontrarán productos de calidad, sino también un espacio donde recibirán asesoramiento personalizado y profesional.

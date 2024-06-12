@@ -7,47 +7,48 @@ import { FaInstagram, FaSquareXTwitter } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 
 
-const navigation = [
-    {
-        name: "inicio",
-        id: 1
-    },
-    {
-        name: "productos",
-        id: 2,
-        children: [
-            {
-                name: "proteinas",
-                category: "proteinas",
-                id: 2.1
-            },
-            {
-                name: "aminoacidos",
-                category: "aminoacidos",
-                id: 2.2
-            },
-            {
-                name: "vitaminas",
-                category: "vitaminas",
-                id: 2.3
-            }
-        ]
-    },
-    {
-        name: "contacto",
-        id: 3
-    },
-    {
-        name: "ayuda",
-        id: 4
-    }
-]
+// const navigation = [
+//     {
+//         name: "inicio",
+//         id: 1
+//     },
+//     {
+//         name: "productos",
+//         id: 2,
+//         children: [
+//             {
+//                 name: "proteinas",
+//                 category: "proteinas",
+//                 id: 2.1
+//             },
+//             {
+//                 name: "aminoacidos",
+//                 category: "aminoacidos",
+//                 id: 2.2
+//             },
+//             {
+//                 name: "vitaminas",
+//                 category: "vitaminas",
+//                 id: 2.3
+//             }
+//         ]
+//     },
+//     {
+//         name: "contacto",
+//         id: 3
+//     },
+//     {
+//         name: "ayuda",
+//         id: 4
+//     }
+// ]
 
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
+// function classNames(...classes) {
+//     return classes.filter(Boolean).join(' ')
+// }
 
 export default function NavBar() {
+    const {  } = useContext(NavigationContext);
     return (
         <Disclosure as="nav" className="bg-gray-800 fixed top-0 left-0 right-0 z-50">
             {({ open }) => (

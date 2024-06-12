@@ -43,8 +43,8 @@ function Brief({ purchaseData }) {
 
     const { fecha, hora } = obtenerFechaYHoraActual();
     return (
-        <div>
-            <div className='flex flex-col p-6 h-fit bg-gray-100 border border-gray-200 rounded-lg'>
+        <div className=''>
+            <div className='flex flex-col p-6 mt-28 bg-gray-100 border border-gray-200 rounded-lg'>
                 <div className='flex items-center mb-4'>
                     <img className='max-w-12 max-h-12' src="./img/prot1.png" alt="Suplementos Uruguay" />
                     <h1 className='text-2xl uppercase font-bold h-fit'>Suplementos Uruguay</h1>
@@ -82,7 +82,7 @@ function Brief({ purchaseData }) {
                 </div>
                 <p className='uppercase'>VISA debito/credito</p>
             </div>
-            <div className='flex justify-between mt-4'>
+            <div className='flex justify-between mt-4 mb-12'>
                 <button onClick={imprimirTicket} className='bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600' >Imprimir Ticket</button>
                 <Link className='bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600' to="/inicio" >Volver al Inicio</Link>
             </div>
